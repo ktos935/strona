@@ -1,6 +1,39 @@
+@keyframes color-change {
+    0% {
+        color:rgb(22, 22, 219)
+    }
+    
+    50% {
+        color:darkblue
+    }
+
+    100% {
+        color:rgb(22, 22, 219)
+    }
+}
+
+body{    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aqua;
+}
+
+
 h1 {
+    background-color: aquamarine;
     color:rgb(22, 22, 219) ;
     font-size: 50px;
+    animation: color-change 3s infinite
 
+}
 
+h2 {
+    font-size: 20px;
+    color: rgb(22, 22, 219);
+    transition: all 1.5s;
+}
+
+h2:hover {
+    font-size: 30px;
+    color:darkblue;
+    transition: all 1.5s;
 }
